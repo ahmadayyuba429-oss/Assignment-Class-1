@@ -2,5 +2,84 @@ body{
     font-family: 'Inter', sans-serif;
 }
 
+.header{
+    /* background-color: #ffffff; */
+    padding-inline: 80px;
+}
+
+.header-container{
+    /* max-width: 1200px;
+    margin: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    /* justify-content: space-between; */
+}
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img{
+    width: 38px;
+    height: auto;
+}
+
+.logo-text{
+    color: #2d98ff;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.nav-links{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #475467;
+    font-weight: 600;
+}
+
+.cta-btn{
+    display: flex;
+    gap: 12px;
+}
+
+.cta-btn a{
+    text-decoration: none;
+}
+
+.cta-btn .btn-signup{
+    padding: 10px 16px;
+    background-color: #7F56D9;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.cta-btn .btn-login{
+    padding: 10px 16px;
+    color: #475467;
+    font-weight: 600;
+}
+
+
+
 
 
