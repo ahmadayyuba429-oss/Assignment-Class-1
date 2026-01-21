@@ -1,11 +1,32 @@
+/* CSS Reset Modern */
+:root {
+  --text: #475467;
+  --primary: #6a41c6;
+  --secondary: #7f56d9;
+  --footer: #53389e;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
     font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1280px;
+    
 }
 
 .header{
     /* background-color: #ffffff; */
     padding-inline: 80px;
-}
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                         
 
 .header-container{
     /* max-width: 1200px;
@@ -49,7 +70,6 @@ body{
     display: flex;
     gap: 32px;
 }
-
 .nav-links a{
     text-decoration: none;
     color: #475467;
@@ -104,41 +124,228 @@ body{
     margin-bottom: 12px;
 }
 
-.header-section .section-content p{
+.header-section .section-content p{     
     font-size: 20px;
     font-weight: 400;
     color: #475467;
     margin-bottom: 24px;
 }
 
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', Arial, sans-serif;
+}
 
+/* form container */
+.form-container {
+  max-width: 600px;
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  margin: 0 auto;
+}
 
+/* name */
+.name {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
 
+/* form group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 
+/* Untuk field full lebar */
+.full-width {
+  margin-bottom: 20px;
+}
 
+/* label */
+.form-group label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #344054;
+  margin-bottom: 6px;
+}
 
+/* input & textarea */
+.form-group input,
+.form-group textarea {
+  padding: 12px 14px;
+  font-size: 14px;
+  border: 1px solid #d0d5dd;
+  border-radius: 10px;
+  outline: none;
+  resize: none;
+}
 
+/* Placeholder */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #98a2b3;
+}
 
+/* Focus state */
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #7f56d9;
+}
 
+/* agreement checkbox */
+.agreement {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 14px;
+  color: #475467;
+  margin-bottom: 24px;
+}
 
+.agreement input {
+  margin-top: 3px;
+}
 
+.agreement a {
+  color: #7f56d9;
+  text-decoration: none;
+}
 
+.agreement a:hover {
+  text-decoration: underline;
+}
 
+/* submit button */
+.send {
+  width: 100%;
+  padding: 14px;
+  background: #7f56d9;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
 
+.send:hover {
+  background: #6941c6;
+}
 
+.footer{
+  width: 1440px;
+  height: auto;
 
+}
 
+/* ===== Footer ===== */
+footer {
+  background-color: #5b3ea4; /* ungu utama */
+  color: #ffffff;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
 
+/* Container */
+footer .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
+/* ===== CTA Section ===== */
+footer .cta {
+  padding: 80px 20px 60px;
+}
 
+footer .cta h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
 
+footer .cta p {
+  font-size: 16px;
+  color: #e0d8f5;
+  margin-bottom: 40px;
+}
 
+/* Buttons */
+footer .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
 
+footer .buttons a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 22px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
 
+/* View Demo Button */
+footer .view-demo {
+  background-color: #ffffff;
+  color: #3a2b6d;
+  border: 1px solid #e6e0f7;
+}
 
+footer .view-demo img {
+  width: 18px;
+  height: 18px;
+}
 
+footer .view-demo:hover {
+  background-color: #f2effb;
+}
 
+/* Get Started Button */
+footer .get-started {
+  background-color: #7c5cff;
+  color: #ffffff;
+}
 
+footer .get-started:hover {
+  background-color: #6a4ae0;
+}
+
+/* ===== Copyright Section ===== */
+footer .copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 20px 0;
+}
+
+footer .copyright p {
+  font-size: 14px;
+  color: #d6cff0;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  footer .cta h1 {
+    font-size: 28px;
+  }
+
+  footer .buttons {
+    flex-direction: column;
+  }
+
+  footer .buttons a {
+    justify-content: center;
+  }
+}
 
 
 
