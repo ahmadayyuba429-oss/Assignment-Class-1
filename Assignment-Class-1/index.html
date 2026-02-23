@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+  <!---- Google Fonts ---->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header class="header container">
+    <div class="header-container">
+      <nav class="nav">
+        <div class="nav-logo">
+          <img src="assets/Logo Brand PTI.png" alt="PTI Logo" class="logo-img" />
+          <span class="logo-text">PTI</span>
+        </div>
+    </div>
+
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Pricing</a></li>
+        </ul>
+      </nav>
+
+      <div class="cta-btn">
+        <a href="#" class="btn-login">Log in</a>  
+        <a href="#" class="btn-signup">Sign up</a>
+      </div>
+    </div>
+    </nav>
+  </header>
+
+  <!--- main content --->
+  <main class="main container">
+  <section class="header-section">
+    <div class="section-content">
+      <h2 class="sub-title">
+        Contact us
+      </h2>
+      <h1 class="main-title">
+        Get in touch
+      </h1>
+      <p class="description">We’d love to hear from you. Please fill out this form.
+      </p>
+    </div>
+  </section>
+
+  <form action="post" class="form-container">
+          <div class="name">
+            <!-- First Name -->
+            <div class="form-group">
+              <label for="first-name">First name</label>
+              <input type="text" id="first-name" placeholder="First name" />
+            </div>
+            <!-- Last Name -->
+            <div class="form-group">
+              <label for="last-name">Last name</label>
+              <input type="text" id="last-name" placeholder="Last name" />
+            </div>
+          </div>
+          
+          <!-- Phone Number -->
+            <div class="form-group full-width">
+              <label for="phone-number">Phone number</label>
+              <input
+                type="text"
+                id="phone-number"
+                placeholder="+1 (555) 000-0000"
+              />
+            </div>
+
+            <!-- Message -->
+            <div class="form-group full-width">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                placeholder="Leave us a message..."
+                rows="5"
+              ></textarea>
+            </div>
+
+            <!-- Agreement -->
+            <div class="agreement">
+              <input
+                type="checkbox"
+                id="privacy-policy"
+                name="privacy-policy"
+                required
+              />
+              <label for="privacy-policy">
+                You agree to our friendly
+                <a href="#" target="_blank">privacy policy</a>.
+              </label>
+            </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="send">Send message</button>
+        </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+      <section class="cta">
+        <div class="container">
+          <h1>No long-term contracts. No catches. Simple.</h1>
+          <p>Start your 30-day free trial. Cancel anytime.</p>
+          <div class="buttons">
+            <a href="#" class="view-demo">
+              <img src="./assets/svg/play-circle.svg" alt=" Play Circle Icon for view demo" />
+              View demo
+            </a>
+            <a href="#" class="get-started">Get started</a>
+          </div>
+        </div>
+      </section>
+      <section class="copyright">
+        <div class="container">
+          <p>&copy; 2024 Pondok Teknologi Indonesia. All rights reserved</p>
+        </div>
+      </section>
+    </footer>
+</body>
+
+</html>
